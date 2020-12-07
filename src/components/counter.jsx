@@ -9,7 +9,7 @@ class Counter extends Component{
 
 
   async componentDidMount() {
-    const response = await fetch('http://localhost:9000/api',{
+    const response = await fetch('http://hackerearth-env.eba-7hqq8xkm.us-east-2.elasticbeanstalk.com/api',{
 
         method : 'GET',
         headers :{
