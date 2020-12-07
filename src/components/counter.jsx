@@ -36,7 +36,7 @@ class Counter extends Component{
     return(
       <div>
       <span className="badge badge-primary m-2">{this.formatCount()}</span>
-      <button onClick={()=>this.props.onIncrement(this.props.id)} className="btn btn-secondary">{this.state.data}</button>
+      <button onClick={()=>this.props.onIncrement(this.props.id)} className="btn btn-secondary">item number {this.state.data}</button>
       <button onClick={()=>this.props.onIncrement(this.props.counter)} className="btn btn-success">add item</button>
       <button onClick={()=>this.props.onDecrement(this.props.counter)} className="btn btn-danger">remove item</button>
       <button onClick={()=>this.props.onDelete(this.props.id)}
